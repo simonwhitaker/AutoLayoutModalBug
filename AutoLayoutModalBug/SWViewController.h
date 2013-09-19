@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SWModalViewController.h"
 
-@interface SWViewController : UIViewController
+@interface SWViewController : UIViewController <SWMovalViewControllerDelegate>
+
+@property (nonatomic, weak) IBOutlet UIButton *button;
+
+- (IBAction)handleButton:(id)sender;
 
 @end
